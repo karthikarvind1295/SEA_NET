@@ -1,0 +1,24 @@
+GOAL MODEL
+---------------------------------------------------------------------------------------------------------------------------
+
+python train_goal_model.py -d /home/karthik/Final_thesis/Module_3_dataset_simple_Binary/Datasets/Mixed_single_dual/train -l /home/karthik/Final_thesis/Module_3_dataset_simple_Binary/Datasets/Mixed_single_dual/labels -s /home/karthik/Desktop/Project/Attention_module/weights_simpleshapes_itr16/ -lo /home/karthik/Desktop/Project/Attention_module/weights_simpleshapes_itr16/
+
+Seq:
+
+python train_goal_model.py -d /home/karthik/Final_thesis/Module_3_dataset_simple_Binary/Datasets/Seq_dataset/Seq_dataset -l /home/karthik/Final_thesis/Module_3_dataset_simple_Binary/Datasets/Seq_dataset/Seq_initial/label -s /home/karthik/Desktop/Project/Attention_module/weights_simpleshapes_itr17/ -lo /home/karthik/Desktop/Project/Attention_module/weights_simpleshapes_itr17/
+
+all_location:
+
+python train_attention_all_location.py -d /home/karthik/Final_thesis/Module_3_dataset_simple_Binary/Datasets/all_location_dataset/train -l /home/karthik/Final_thesis/Module_3_dataset_simple_Binary/Datasets/all_location_dataset/train/labels -s /home/karthik/Desktop/Project/Attention_module/weights_simpleshapes_itr28/ -lo /home/karthik/Desktop/Project/Attention_module/weights_simpleshapes_itr28/
+
+Self Attention:
+
+python train_self_attention.py -d /home/karthik/Final_thesis/Module_3_dataset_simple_Binary/Datasets/Dual_target_dataset/train_large -l /home/karthik/Final_thesis/Module_3_dataset_simple_Binary/Datasets/Dual_target_dataset/train_large -s /home/karthik/Desktop/Project/Attention_module/weights_simpleshapes_itr29/ -lo /home/karthik/Desktop/Project/Attention_module/weights_simpleshapes_itr29/
+
+python train_attention_with_self_attn.py -d /home/karthik/Final_thesis/Module_3_dataset_simple_Binary/Datasets/Dual_target_dataset/train_large -l /home/karthik/Final_thesis/Module_3_dataset_simple_Binary/Datasets/Dual_target_dataset/train_large -s /home/karthik/Desktop/Project/Attention_module/weights_simpleshapes_itr29/ -lo /home/karthik/Desktop/Project/Attention_module/weights_simpleshapes_itr29/
+
+python train_location_regression.py -d /home/karthik/Final_thesis/Module_3_dataset_simple_Binary/Datasets/Dataset_for_reg/train -l /home/karthik/Final_thesis/Module_3_dataset_simple_Binary/Datasets/Dataset_for_reg/label -s /home/karthik/Desktop/Project/Attention_module/weights_simpleshapes_itr31 -lo /home/karthik/Desktop/Project/Attention_module/weights_simpleshapes_itr31
+
+python train_location_regression.py -d /home/karthik/Final_thesis/Module_3_dataset_simple_Binary/Datasets/Seq_dataset/Seq_with_star -s /home/karthik/Desktop/Project/Attention_module/weights_simpleshapes_itr44 -lo /home/karthik/Desktop/Project/Attention_module/weights_simpleshapes_itr44
+
+python train_location_regression.py -d /home/karthik/Final_thesis/Module_1_Data_extraction/Robo_Demonstration/train -s /home/karthik/Desktop/Project/Attention_module/weights_simpleshapes_itr46 -lo /home/karthik/Desktop/Project/Attention_module/weights_simpleshapes_itr46
